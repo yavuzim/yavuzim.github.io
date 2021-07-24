@@ -1,0 +1,48 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  
+  /* The Masonry Container */
+  .flex-container {
+    /*margin: 1.5em auto;
+    column-count: 3;
+    column-gap: 1em;
+    padding: 50px;*/
+
+    display: flex;
+    flex-flow: row wrap;
+    width: 975px;
+  }
+  
+  .flex-item { /* Masonry bricks or child elements */
+   /* background-color: #eee;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;*/
+
+    display: flex;
+    font-size: 30px;
+    min-height: 200px;  /* Would use just height but Firefox is weird */
+    flex: 0 0 auto;
+    width: 33.333%;
+  }  
+.item-inner{
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+    margin: 10px;
+}
+  .image {
+    width:100%;
+    border-radius: 10px;
+  }
+  .flex-item:hover .item-inner{
+      transition: all 200ms;
+      transform: scale(1.2);
+  }  
