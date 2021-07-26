@@ -88,18 +88,18 @@ section{
     justify-content: space-evenly;
     padding-top: 12px;
 }
-.profile-img{
+#profile-img{
     width: 230px;
     height: 230px;
     display: flex;
     align-items: center;
 }
-.profile-img>img{
+#profile-img>img{
     width: 220px;
     height: 220px;
     border-radius: 300px;
 }
-.profile-img>img:hover{
+#profile-img>img:hover{
     transform: scale(1.1);
     transition: all 0.5s;
 }
